@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>MyPortfolio</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="login.html">Login / Sign Up</a></li>
+      </ul>
+    </nav>
+  </body>
+
+  <div class="sidebar">
+    <ul>
+      <li><button id="personalInformationButton">Personal Information</button></li>
+      <li><button id="professionalInterestsButton">Professional Interests</button></li>
+      <li><button id="experienceButton">Experience</button></li>
+      <li><button id="educationButton">Education</button></li>
+      <li><button id="projectsButton">Projects</button></li>
+      <li><button id="resumeButton">Resume</button></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>Personal Portfolio Builder</h1>
+    <form id="portfolioForm">
+      <fieldset id="personalinfo">
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"><br>
+      </fieldset>
+      <fieldset id="professionalinterests">
+        <legend>Professional Interests</legend>
+        <label for="interests">Interests:</label>
+        <textarea id="interests" name="interests"></textarea><br>
+      </fieldset>
+      <fieldset id="experience">
+        <legend>Experience</legend>
+        <label for="experience">Experience:</label>
+        <textarea id="experience" name="experience"></textarea><br>
+      </fieldset>
+      <fieldset id="education">
+        <legend>Education</legend>
+        <label for="education">Education:</label>
+        <textarea id="education" name="education"></textarea><br>
+      </fieldset>
+      <fieldset id="projects">
+        <legend>Projects</legend>
+        <label for="projects">Projects:</label>
+        <textarea id="projects" name="projects"></textarea><br>
+      </fieldset>
+      <fieldset id="resume">
+        <legend>Resume</legend>
+        <label for="resume">Resume:</label>
+        <input type="file" id="resume" name="resume"><br>
+      </fieldset>
+      <input type="submit" value="Submit">
+    </form>
+    <div id="home"></div>
+  </div>
+
+    <script src="home.js"></script>
+  </body>
+</html>
